@@ -4,6 +4,8 @@
 
 Contour is a full-featured SaaS analytics dashboard built from scratch in **vanilla JavaScript, HTML, and CSS** — no framework, no build step, no external dependencies. It's a static site: open it behind any web server and it runs.
 
+**[Live demo →](https://contour-dashboard-blond.vercel.app/#/overview)**
+
 ## Features
 
 - **Overview** — headline KPI cards (Revenue, Active Customers, Conversion Rate, Traffic) with trend badges and sparklines, a live analytics chart, a recent-activity feed, and a "customers needing attention" list
