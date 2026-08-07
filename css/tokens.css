@@ -1,0 +1,127 @@
+/*
+  Contour — design tokens
+  Single source of truth for color, type, spacing, radius, border, shadow,
+  motion, and z-index. Components must read these variables rather than
+  hardcoding values, so the entire product (including the chart, since it
+  reads currentColor / var() directly) repaints correctly on theme change
+  with no JS re-render required.
+*/
+
+:root {
+  /* ---- Color: light theme (default) ---- */
+  --color-bg: #f5f6f4;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-border: #e1e4df;
+  --color-border-strong: #c9cec5;
+
+  --color-text-primary: #1b211c;
+  --color-text-secondary: #5b655c;
+  --color-text-tertiary: #8b948b;
+  --color-text-on-accent: #f9f5f1;
+
+  --color-accent: #8a4a2b;
+  --color-accent-hover: #723d23;
+  --color-accent-soft: #f1e4dc;
+
+  --color-positive: #2f6b4f;
+  --color-positive-soft: #e2efe8;
+  --color-negative: #a83a3a;
+  --color-negative-soft: #f5e4e4;
+  --color-warning: #b8892f;
+  --color-warning-soft: #f4ecdc;
+
+  --color-hover-overlay: rgba(27, 33, 28, 0.04);
+  --color-active-overlay: rgba(27, 33, 28, 0.08);
+  --color-focus-ring: #8a4a2b;
+  --color-scrim: rgba(20, 24, 21, 0.4);
+
+  /* ---- Typography ---- */
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  --text-xs: 0.75rem;    /* 12px — captions, timestamps */
+  --text-sm: 0.8125rem;  /* 13px — secondary/table text */
+  --text-base: 0.875rem; /* 14px — default body/UI text */
+  --text-md: 1rem;       /* 16px — emphasized body, form labels */
+  --text-lg: 1.125rem;   /* 18px — card titles */
+  --text-xl: 1.375rem;   /* 22px — page titles */
+  --text-2xl: 1.75rem;   /* 28px — section headers */
+  --text-3xl: 2.25rem;   /* 36px — KPI figures */
+  --text-4xl: 2.75rem;   /* 44px — reserved: hero KPI */
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Spacing (4px base unit; --space-N = N * 4px) ---- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+
+  /* ---- Radius ---- */
+  --radius-sm: 4px;  /* badges, buttons, inputs */
+  --radius-md: 6px;  /* cards, tables, panels */
+  --radius-lg: 10px; /* drawer, modal, toast */
+
+  /* ---- Border ---- */
+  --border-width: 1px;
+
+  /* ---- Shadow (reserved for elevated/transient elements only) ---- */
+  --shadow-elevated: 0 4px 16px rgba(27, 33, 28, 0.12);
+  --shadow-drawer: -8px 0 24px rgba(27, 33, 28, 0.1);
+
+  /* ---- Motion ---- */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 350ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Z-index scale ---- */
+  --z-dropdown: 100;
+  --z-drawer: 200;
+  --z-toast: 300;
+  --z-modal: 400;
+}
+
+[data-theme="dark"] {
+  --color-bg: #14181f;
+  --color-surface: #1c211d;
+  --color-surface-raised: #232921;
+  --color-border: #2a302b;
+  --color-border-strong: #3a4139;
+
+  --color-text-primary: #edefea;
+  --color-text-secondary: #9ba69c;
+  --color-text-tertiary: #6f796f;
+  --color-text-on-accent: #1b211c;
+
+  --color-accent: #c97a4a;
+  --color-accent-hover: #db8c5c;
+  --color-accent-soft: #33261e;
+
+  --color-positive: #5fbe8d;
+  --color-positive-soft: #1e3129;
+  --color-negative: #e08585;
+  --color-negative-soft: #382323;
+  --color-warning: #e0b15f;
+  --color-warning-soft: #362c1a;
+
+  --color-hover-overlay: rgba(237, 239, 234, 0.06);
+  --color-active-overlay: rgba(237, 239, 234, 0.1);
+  --color-focus-ring: #c97a4a;
+  --color-scrim: rgba(0, 0, 0, 0.55);
+
+  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-drawer: -8px 0 24px rgba(0, 0, 0, 0.35);
+}

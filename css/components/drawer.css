@@ -1,0 +1,20 @@
+/*
+  Contour — drawer overlay (mobile sidebar backdrop)
+  Sits just below the sidebar's z-index so the drawer panel stays on top of
+  it, and above ordinary content so it visually blocks interaction with the
+  page underneath. Actual interaction blocking is done by inert (see
+  js/modules/sidebar.js), not by this overlay alone.
+*/
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-scrim);
+  z-index: calc(var(--z-drawer) - 10);
+}
+
+@media (min-width: 1024px) {
+  .drawer-overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+/*
+  Contour — mobile topbar
+  Visible only below the shell breakpoint; the persistent sidebar's own
+  footer covers the same theme/account affordances above it.
+*/
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-inline: var(--space-2);
+  height: 3.5rem;
+  border-bottom: var(--border-width) solid var(--color-border);
+  background-color: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-dropdown);
+}
+
+.topbar__title {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-md);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .topbar {
+    display: none;
+  }
+}

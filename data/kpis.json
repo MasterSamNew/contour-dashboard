@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-08-06",
+  "workspace": {
+    "name": "Bramwell",
+    "owner": "Dana Whitfield",
+    "role": "Head of Growth"
+  },
+  "ranges": [
+    {
+      "range": "today",
+      "label": "Today",
+      "revenue": {
+        "current": 8441,
+        "previous": 8724,
+        "deltaPct": -3.2
+      },
+      "customers": {
+        "current": 3140,
+        "previous": 3163,
+        "deltaPct": -0.7
+      },
+      "conversionRate": {
+        "current": 3.77,
+        "previous": 3.87,
+        "deltaPts": -0.11
+      },
+      "traffic": {
+        "current": 2575,
+        "previous": 2660,
+        "deltaPct": -3.2
+      }
+    },
+    {
+      "range": "7d",
+      "label": "7 days",
+      "revenue": {
+        "current": 59239,
+        "previous": 57904,
+        "deltaPct": 2.3
+      },
+      "customers": {
+        "current": 3140,
+        "previous": 3087,
+        "deltaPct": 1.7
+      },
+      "conversionRate": {
+        "current": 3.87,
+        "previous": 3.89,
+        "deltaPts": -0.02
+      },
+      "traffic": {
+        "current": 17084,
+        "previous": 16929,
+        "deltaPct": 0.9
+      }
+    },
+    {
+      "range": "30d",
+      "label": "30 days",
+      "revenue": {
+        "current": 247622,
+        "previous": 234364,
+        "deltaPct": 5.7
+      },
+      "customers": {
+        "current": 3140,
+        "previous": 2960,
+        "deltaPct": 6.1
+      },
+      "conversionRate": {
+        "current": 3.87,
+        "previous": 3.88,
+        "deltaPts": -0.01
+      },
+      "traffic": {
+        "current": 73370,
+        "previous": 72394,
+        "deltaPct": 1.3
+      }
+    },
+    {
+      "range": "90d",
+      "label": "90 days",
+      "revenue": {
+        "current": 702629,
+        "previous": 594408,
+        "deltaPct": 18.2
+      },
+      "customers": {
+        "current": 3140,
+        "previous": 2665,
+        "deltaPct": 17.8
+      },
+      "conversionRate": {
+        "current": 3.85,
+        "previous": 3.76,
+        "deltaPts": 0.09
+      },
+      "traffic": {
+        "current": 214281,
+        "previous": 208185,
+        "deltaPct": 2.9
+      }
+    },
+    {
+      "range": "12mo",
+      "label": "12 months",
+      "revenue": {
+        "current": 2215257,
+        "previous": 822423,
+        "deltaPct": 169.4
+      },
+      "customers": {
+        "current": 3140,
+        "previous": 1467,
+        "deltaPct": 114
+      },
+      "conversionRate": {
+        "current": 3.73,
+        "previous": 3.39,
+        "deltaPts": 0.34
+      },
+      "traffic": {
+        "current": 825838,
+        "previous": 709863,
+        "deltaPct": 16.3
+      }
+    }
+  ]
+}

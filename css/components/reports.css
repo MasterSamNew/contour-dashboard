@@ -1,0 +1,92 @@
+/*
+  Contour — Reports (M6)
+  Three cards, same "instrument panel" visual language as the chart
+  workspace / activity feed / attention list (surface + border + radius).
+*/
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.report-card__title {
+  font-size: var(--text-lg);
+}
+
+.report-card__value {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.report-card__note {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.report-card__sparkline {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: var(--space-1);
+}
+
+.report-card__sparkline .sparkline__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.report-card__sparkline--up {
+  color: var(--color-positive);
+}
+
+.report-card__sparkline--down {
+  color: var(--color-negative);
+}
+
+.report-card__sparkline--flat {
+  color: var(--color-text-tertiary);
+}
+
+.report-card__breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.report-card__breakdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.report-card__breakdown-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.report-card__breakdown-count {
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+}
+
+.report-card .data-table__export-button {
+  margin-left: 0;
+  align-self: flex-start;
+}

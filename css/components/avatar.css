@@ -1,0 +1,21 @@
+/*
+  Contour — avatar
+  Circular initials badge. Full circular radius is a deliberate exception
+  to the "restrained radius" rule — identity avatars are conventionally
+  circular, and a square one would read as a bug, not a choice.
+*/
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+}

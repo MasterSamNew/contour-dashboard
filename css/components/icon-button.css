@@ -1,0 +1,32 @@
+/*
+  Contour — icon button
+  Shared by the mobile topbar (menu, theme) and sidebar (close, theme).
+  Sized to a 44px touch target regardless of the icon's own visual size.
+*/
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
+}
+
+.icon-button:hover {
+  background-color: var(--color-hover-overlay);
+  color: var(--color-text-primary);
+}
+
+.icon-button:active {
+  background-color: var(--color-active-overlay);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}

@@ -1,0 +1,65 @@
+/*
+  Contour — KPI card (M3)
+
+  One card, reused for all four headline metrics (Overview). The delta/
+  trend badge itself is styled by css/components/trend-badge.css (M4) —
+  shared with the chart workspace's comparison badge.
+*/
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.kpi-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  min-width: 0;
+}
+
+.kpi-card__label {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.kpi-card__value {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+}
+
+.kpi-card__sparkline {
+  width: 100%;
+  height: 2rem;
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+
+.kpi-card__sparkline .sparkline__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.kpi-card__sparkline--up {
+  color: var(--color-positive);
+}
+
+.kpi-card__sparkline--down {
+  color: var(--color-negative);
+}
+
+.kpi-card__sparkline--flat {
+  color: var(--color-text-tertiary);
+}

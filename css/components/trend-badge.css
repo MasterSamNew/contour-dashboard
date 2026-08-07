@@ -1,0 +1,43 @@
+/*
+  Contour — trend badge (M4)
+  Shared by KPI cards (M3) and the chart workspace comparison (M4). Same
+  rules that lived inline in kpi-card.css before the markup moved into
+  trend-indicator.js — renamed, not redesigned.
+*/
+
+.trend-badge {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.trend-badge__icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+}
+
+.trend-badge__text {
+  font-weight: var(--weight-medium);
+}
+
+.trend-badge__period {
+  color: var(--color-text-tertiary);
+}
+
+.trend-badge--up .trend-badge__icon,
+.trend-badge--up .trend-badge__text {
+  color: var(--color-positive);
+}
+
+.trend-badge--down .trend-badge__icon,
+.trend-badge--down .trend-badge__text {
+  color: var(--color-negative);
+}
+
+.trend-badge--flat .trend-badge__icon,
+.trend-badge--flat .trend-badge__text {
+  color: var(--color-text-secondary);
+}

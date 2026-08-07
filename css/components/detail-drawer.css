@@ -1,0 +1,146 @@
+/*
+  Contour — customer detail drawer (M5)
+
+  A right-anchored panel, distinct from the left-anchored nav drawer so the
+  two read as different kinds of thing (navigation vs. content detail).
+  Behavior (open/close/inert/focus/escape) is js/utils/drawer.js, shared
+  with the nav sidebar — this file is only the visual state a class
+  produces, same division of labor sidebar.css already uses.
+
+  Its own overlay (not the nav drawer's #drawer-overlay, which is
+  display:none above 1024px) sits above the persistent sidebar's z-index
+  at every width, since this drawer is a genuine temporary overlay
+  regardless of viewport — unlike the nav drawer, which becomes permanent
+  shell chrome on desktop.
+*/
+
+.detail-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-scrim);
+  z-index: calc(var(--z-modal) - 10);
+}
+
+.detail-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  height: 100dvh;
+  width: min(26rem, 100vw);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border-left: var(--border-width) solid var(--color-border);
+  box-shadow: var(--shadow-drawer);
+  z-index: var(--z-modal);
+  transform: translateX(100%);
+  transition: transform var(--duration-base) var(--ease-standard);
+  overflow-y: auto;
+}
+
+.detail-drawer.is-open {
+  transform: translateX(0);
+}
+
+.detail-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-6);
+  border-bottom: var(--border-width) solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.detail-drawer__title {
+  font-size: var(--text-lg);
+}
+
+.detail-drawer__body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.detail-drawer__status-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.detail-drawer__company {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.detail-drawer__fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.detail-drawer__field {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.detail-drawer__field-label {
+  color: var(--color-text-tertiary);
+}
+
+.detail-drawer__field-value {
+  color: var(--color-text-primary);
+  font-weight: var(--weight-medium);
+  text-align: right;
+}
+
+.detail-drawer__history h3 {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.detail-drawer__history-empty {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.detail-drawer__history-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.detail-drawer__history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: var(--border-width) solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.detail-drawer__history-amount {
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+}
+
+.detail-drawer__history-date {
+  color: var(--color-text-tertiary);
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 480px) {
+  .detail-drawer {
+    width: 100vw;
+  }
+}

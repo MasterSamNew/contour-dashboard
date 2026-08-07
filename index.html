@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Blocking, pre-paint theme application — prevents a flash of the wrong
+    // theme for dark-mode users. Module scripts (js/theme.js) run after HTML
+    // parsing, which is too late to avoid the flash on first paint.
+    (function () {
+      try {
+        var stored = localStorage.getItem("contour:theme");
+        var theme =
+          stored === "light" || stored === "dark"
+            ? stored
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        /* localStorage unavailable — default light theme tokens apply */
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contour</title>
+  <meta
+    name="description"
+    content="Contour — a SaaS growth analytics dashboard. See the shape of your growth."
+  />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components/icon-button.css" />
+  <link rel="stylesheet" href="css/components/avatar.css" />
+  <link rel="stylesheet" href="css/components/sidebar.css" />
+  <link rel="stylesheet" href="css/components/topbar.css" />
+  <link rel="stylesheet" href="css/components/drawer.css" />
+  <link rel="stylesheet" href="css/components/kpi-card.css" />
+  <link rel="stylesheet" href="css/components/trend-badge.css" />
+  <link rel="stylesheet" href="css/components/chart.css" />
+  <link rel="stylesheet" href="css/components/status-badge.css" />
+  <link rel="stylesheet" href="css/components/table.css" />
+  <link rel="stylesheet" href="css/components/detail-drawer.css" />
+  <link rel="stylesheet" href="css/components/activity-feed.css" />
+  <link rel="stylesheet" href="css/components/attention-list.css" />
+  <link rel="stylesheet" href="css/components/toast.css" />
+  <link rel="stylesheet" href="css/components/reports.css" />
+  <link rel="stylesheet" href="css/components/settings.css" />
+</head>
+<body>
+  <a class="skip-link visually-hidden focusable" href="#main-content">Skip to main content</a>
+
+  <div class="app-shell">
+    <header class="topbar" id="topbar">
+      <button
+        type="button"
+        class="icon-button"
+        id="menu-trigger"
+        aria-expanded="false"
+        aria-controls="sidebar"
+        aria-label="Open navigation menu"
+      >
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#menu"></use></svg>
+      </button>
+
+      <span class="topbar__title" id="topbar-title">Contour</span>
+
+      <div class="topbar__actions">
+        <button type="button" class="icon-button" data-theme-toggle aria-label="Switch theme">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#sun"></use></svg>
+        </button>
+        <span class="avatar" id="avatar-mobile" aria-hidden="true"></span>
+      </div>
+    </header>
+
+    <div class="drawer-overlay" id="drawer-overlay" hidden></div>
+
+    <nav class="sidebar" id="sidebar" aria-label="Primary">
+      <div class="sidebar__header">
+        <a class="wordmark" href="#/overview">
+          <span class="wordmark__mark" aria-hidden="true">C</span>
+          <span class="wordmark__text">Contour</span>
+        </a>
+        <button
+          type="button"
+          class="icon-button sidebar__close"
+          id="drawer-close"
+          aria-label="Close navigation menu"
+        >
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#x"></use></svg>
+        </button>
+      </div>
+
+      <ul class="nav-list" id="nav-list"></ul>
+
+      <div class="sidebar__footer">
+        <button type="button" class="theme-toggle-row" data-theme-toggle aria-label="Switch theme">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#sun"></use></svg>
+          <span>Theme</span>
+        </button>
+
+        <div class="account" id="account-block">
+          <span class="avatar" id="avatar-desktop" aria-hidden="true"></span>
+          <div class="account__info">
+            <span class="account__name" id="account-name"></span>
+            <span class="account__role" id="account-role"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+      <div id="view-root" class="container"></div>
+    </main>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

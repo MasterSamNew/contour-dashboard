@@ -1,0 +1,435 @@
+{
+  "rows": [
+    {
+      "id": "ACT-0001",
+      "type": "payment_received",
+      "customerName": "Nora Osei",
+      "company": "Windrow Digital",
+      "amount": 29,
+      "date": "2026-08-06"
+    },
+    {
+      "id": "ACT-0002",
+      "type": "subscription_upgraded",
+      "customerName": "Rosa Sorel",
+      "company": "Thistle Digital",
+      "plan": "Growth",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0003",
+      "type": "payment_received",
+      "customerName": "Talia Adeyemi",
+      "company": "Thistle Media",
+      "amount": 29,
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0004",
+      "type": "new_customer",
+      "customerName": "Ivy Sorel",
+      "company": "Palisade Supply Co",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0005",
+      "type": "new_customer",
+      "customerName": "Owen Aldrich",
+      "company": "Rowan Ventures",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0006",
+      "type": "new_customer",
+      "customerName": "Elena Lindqvist",
+      "company": "Brightwell Provisions",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0007",
+      "type": "new_customer",
+      "customerName": "Dante Tanaka",
+      "company": "Cinder Partners",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0008",
+      "type": "new_customer",
+      "customerName": "Silas Whitfield",
+      "company": "Granite Supply Co",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0009",
+      "type": "new_customer",
+      "customerName": "Rhys Falkner",
+      "company": "Thistle Systems",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0010",
+      "type": "new_customer",
+      "customerName": "Lucia Tanaka",
+      "company": "Rowan Logistics",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0011",
+      "type": "new_customer",
+      "customerName": "Finn Pham",
+      "company": "Sable Group",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "ACT-0012",
+      "type": "new_customer",
+      "customerName": "Cyrus Vance",
+      "company": "Palisade Analytics",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0013",
+      "type": "new_customer",
+      "customerName": "Nora Tanaka",
+      "company": "Marrow Logistics",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0014",
+      "type": "new_customer",
+      "customerName": "Cyrus Pham",
+      "company": "Thistle Supply Co",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0015",
+      "type": "new_customer",
+      "customerName": "Rosa Reyes",
+      "company": "Hollow Media",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0016",
+      "type": "new_customer",
+      "customerName": "Theo Reyes",
+      "company": "Rowan Provisions",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0017",
+      "type": "new_customer",
+      "customerName": "Talia Aldrich",
+      "company": "Hollow Ventures",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0018",
+      "type": "new_customer",
+      "customerName": "Bianca Renner",
+      "company": "Larkspur Provisions",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0019",
+      "type": "new_customer",
+      "customerName": "Elena Adeyemi",
+      "company": "Marrow Freight",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0020",
+      "type": "new_customer",
+      "customerName": "Nora Doyle",
+      "company": "Fernway Supply Co",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0021",
+      "type": "new_customer",
+      "customerName": "Talia Doyle",
+      "company": "Cinder Collective",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0022",
+      "type": "new_customer",
+      "customerName": "Cyrus Tanaka",
+      "company": "Amberlane Group",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "ACT-0023",
+      "type": "subscription_upgraded",
+      "customerName": "Ada Tanaka",
+      "company": "Palisade Logistics",
+      "plan": "Growth",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0024",
+      "type": "payment_received",
+      "customerName": "Talia Sorel",
+      "company": "Palisade Outfitters",
+      "amount": 29,
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0025",
+      "type": "trial_started",
+      "customerName": "Sam Adeyemi",
+      "company": "Thistle Logistics",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0026",
+      "type": "new_customer",
+      "customerName": "Sofia Kowalski",
+      "company": "Hollow & Co",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0027",
+      "type": "new_customer",
+      "customerName": "Priya Bergström",
+      "company": "Brightwell Partners",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0028",
+      "type": "new_customer",
+      "customerName": "Leo Okafor",
+      "company": "Mossgate Analytics",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0029",
+      "type": "cancelled",
+      "customerName": "Silas Kowalski",
+      "company": "Palisade Provisions",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0030",
+      "type": "new_customer",
+      "customerName": "Ivy Doyle",
+      "company": "Hollow Labs",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0031",
+      "type": "new_customer",
+      "customerName": "Maya Ibarra",
+      "company": "Marrow Works",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0032",
+      "type": "new_customer",
+      "customerName": "Finn Osei",
+      "company": "Sable Supply Co",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0033",
+      "type": "new_customer",
+      "customerName": "Silas Kovac",
+      "company": "Windrow Analytics",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0034",
+      "type": "new_customer",
+      "customerName": "Dante Sorel",
+      "company": "Elmhurst Studio",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0035",
+      "type": "new_customer",
+      "customerName": "Finn Ibarra",
+      "company": "Kestrel Outfitters",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "ACT-0036",
+      "type": "payment_received",
+      "customerName": "Leo Renner",
+      "company": "Northbridge Freight",
+      "amount": 29,
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0037",
+      "type": "new_customer",
+      "customerName": "Caleb Reyes",
+      "company": "Hollow Freight",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0038",
+      "type": "new_customer",
+      "customerName": "Maya Kowalski",
+      "company": "Thistle Digital",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0039",
+      "type": "new_customer",
+      "customerName": "Dante Whitfield",
+      "company": "Rowan Group",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0040",
+      "type": "trial_started",
+      "customerName": "Lucia Castel",
+      "company": "Sable Labs",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0041",
+      "type": "new_customer",
+      "customerName": "August Ferreira",
+      "company": "Hollow Supply Co",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0042",
+      "type": "new_customer",
+      "customerName": "Sofia Adeyemi",
+      "company": "Driftwood Logistics",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0043",
+      "type": "new_customer",
+      "customerName": "Elena Corbin",
+      "company": "Northbridge Systems",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0044",
+      "type": "new_customer",
+      "customerName": "Ines Faulk",
+      "company": "Sable Partners",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "ACT-0045",
+      "type": "payment_received",
+      "customerName": "Ivy Aldrich",
+      "company": "Hollow Provisions",
+      "amount": 99,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0046",
+      "type": "new_customer",
+      "customerName": "Talia Adeyemi",
+      "company": "Brightwell Works",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0047",
+      "type": "new_customer",
+      "customerName": "Silas Pham",
+      "company": "Amberlane Labs",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0048",
+      "type": "new_customer",
+      "customerName": "Dante Tanaka",
+      "company": "Mossgate Robotics",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0049",
+      "type": "new_customer",
+      "customerName": "Ivy Pham",
+      "company": "Fernway Works",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0050",
+      "type": "new_customer",
+      "customerName": "Zara Marsh",
+      "company": "Marrow Robotics",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "ACT-0051",
+      "type": "subscription_upgraded",
+      "customerName": "Bianca Kovac",
+      "company": "Cinder Foundry",
+      "plan": "Starter",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0052",
+      "type": "subscription_upgraded",
+      "customerName": "Ines Whitfield",
+      "company": "Hollow Provisions",
+      "plan": "Starter",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0053",
+      "type": "payment_received",
+      "customerName": "Theo Vance",
+      "company": "Granite Logistics",
+      "amount": 299,
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0054",
+      "type": "payment_received",
+      "customerName": "Nora Sorel",
+      "company": "Brightwell Partners",
+      "amount": 99,
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0055",
+      "type": "trial_started",
+      "customerName": "Owen Tanaka",
+      "company": "Larkspur Foundry",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0056",
+      "type": "new_customer",
+      "customerName": "Priya Sorel",
+      "company": "Amberlane Freight",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0057",
+      "type": "new_customer",
+      "customerName": "Sofia Adeyemi",
+      "company": "Elmhurst Works",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0058",
+      "type": "new_customer",
+      "customerName": "Ines Corbin",
+      "company": "Alder Systems",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0059",
+      "type": "new_customer",
+      "customerName": "Julian Bram",
+      "company": "Thistle Provisions",
+      "date": "2026-07-31"
+    },
+    {
+      "id": "ACT-0060",
+      "type": "new_customer",
+      "customerName": "Silas Choudhury",
+      "company": "Hollow Provisions",
+      "date": "2026-07-31"
+    }
+  ]
+}

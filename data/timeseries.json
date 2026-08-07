@@ -1,0 +1,817 @@
+{
+  "daily": [
+    {
+      "date": "2026-05-09",
+      "revenue": 7292,
+      "sessions": 1839,
+      "newSignups": 70,
+      "conversionRate": 3.81,
+      "activeCustomers": 2712
+    },
+    {
+      "date": "2026-05-10",
+      "revenue": 7400,
+      "sessions": 1879,
+      "newSignups": 71,
+      "conversionRate": 3.78,
+      "activeCustomers": 2702
+    },
+    {
+      "date": "2026-05-11",
+      "revenue": 7023,
+      "sessions": 2339,
+      "newSignups": 88,
+      "conversionRate": 3.77,
+      "activeCustomers": 2687
+    },
+    {
+      "date": "2026-05-12",
+      "revenue": 7176,
+      "sessions": 2356,
+      "newSignups": 88,
+      "conversionRate": 3.72,
+      "activeCustomers": 2724
+    },
+    {
+      "date": "2026-05-13",
+      "revenue": 7159,
+      "sessions": 2430,
+      "newSignups": 91,
+      "conversionRate": 3.76,
+      "activeCustomers": 2694
+    },
+    {
+      "date": "2026-05-14",
+      "revenue": 7314,
+      "sessions": 2443,
+      "newSignups": 91,
+      "conversionRate": 3.72,
+      "activeCustomers": 2717
+    },
+    {
+      "date": "2026-05-15",
+      "revenue": 6993,
+      "sessions": 2386,
+      "newSignups": 90,
+      "conversionRate": 3.79,
+      "activeCustomers": 2704
+    },
+    {
+      "date": "2026-05-16",
+      "revenue": 7223,
+      "sessions": 2035,
+      "newSignups": 80,
+      "conversionRate": 3.93,
+      "activeCustomers": 2753
+    },
+    {
+      "date": "2026-05-17",
+      "revenue": 7140,
+      "sessions": 1860,
+      "newSignups": 69,
+      "conversionRate": 3.71,
+      "activeCustomers": 2711
+    },
+    {
+      "date": "2026-05-18",
+      "revenue": 7202,
+      "sessions": 2536,
+      "newSignups": 98,
+      "conversionRate": 3.87,
+      "activeCustomers": 2735
+    },
+    {
+      "date": "2026-05-19",
+      "revenue": 7059,
+      "sessions": 2325,
+      "newSignups": 90,
+      "conversionRate": 3.89,
+      "activeCustomers": 2724
+    },
+    {
+      "date": "2026-05-20",
+      "revenue": 7554,
+      "sessions": 2533,
+      "newSignups": 96,
+      "conversionRate": 3.8,
+      "activeCustomers": 2768
+    },
+    {
+      "date": "2026-05-21",
+      "revenue": 7216,
+      "sessions": 2382,
+      "newSignups": 92,
+      "conversionRate": 3.86,
+      "activeCustomers": 2777
+    },
+    {
+      "date": "2026-05-22",
+      "revenue": 7367,
+      "sessions": 2395,
+      "newSignups": 89,
+      "conversionRate": 3.71,
+      "activeCustomers": 2775
+    },
+    {
+      "date": "2026-05-23",
+      "revenue": 7384,
+      "sessions": 2024,
+      "newSignups": 80,
+      "conversionRate": 3.93,
+      "activeCustomers": 2763
+    },
+    {
+      "date": "2026-05-24",
+      "revenue": 7582,
+      "sessions": 1918,
+      "newSignups": 71,
+      "conversionRate": 3.72,
+      "activeCustomers": 2773
+    },
+    {
+      "date": "2026-05-25",
+      "revenue": 7628,
+      "sessions": 2349,
+      "newSignups": 89,
+      "conversionRate": 3.8,
+      "activeCustomers": 2768
+    },
+    {
+      "date": "2026-05-26",
+      "revenue": 7687,
+      "sessions": 2387,
+      "newSignups": 89,
+      "conversionRate": 3.74,
+      "activeCustomers": 2761
+    },
+    {
+      "date": "2026-05-27",
+      "revenue": 7208,
+      "sessions": 2698,
+      "newSignups": 101,
+      "conversionRate": 3.73,
+      "activeCustomers": 2798
+    },
+    {
+      "date": "2026-05-28",
+      "revenue": 7597,
+      "sessions": 2542,
+      "newSignups": 97,
+      "conversionRate": 3.82,
+      "activeCustomers": 2789
+    },
+    {
+      "date": "2026-05-29",
+      "revenue": 7223,
+      "sessions": 2478,
+      "newSignups": 95,
+      "conversionRate": 3.82,
+      "activeCustomers": 2789
+    },
+    {
+      "date": "2026-05-30",
+      "revenue": 7225,
+      "sessions": 1879,
+      "newSignups": 75,
+      "conversionRate": 3.97,
+      "activeCustomers": 2791
+    },
+    {
+      "date": "2026-05-31",
+      "revenue": 7238,
+      "sessions": 1836,
+      "newSignups": 71,
+      "conversionRate": 3.84,
+      "activeCustomers": 2794
+    },
+    {
+      "date": "2026-06-01",
+      "revenue": 7580,
+      "sessions": 2690,
+      "newSignups": 107,
+      "conversionRate": 3.96,
+      "activeCustomers": 2832
+    },
+    {
+      "date": "2026-06-02",
+      "revenue": 7312,
+      "sessions": 2433,
+      "newSignups": 92,
+      "conversionRate": 3.79,
+      "activeCustomers": 2811
+    },
+    {
+      "date": "2026-06-03",
+      "revenue": 7551,
+      "sessions": 2572,
+      "newSignups": 96,
+      "conversionRate": 3.75,
+      "activeCustomers": 2824
+    },
+    {
+      "date": "2026-06-04",
+      "revenue": 7252,
+      "sessions": 2350,
+      "newSignups": 90,
+      "conversionRate": 3.81,
+      "activeCustomers": 2813
+    },
+    {
+      "date": "2026-06-05",
+      "revenue": 7662,
+      "sessions": 2441,
+      "newSignups": 91,
+      "conversionRate": 3.71,
+      "activeCustomers": 2806
+    },
+    {
+      "date": "2026-06-06",
+      "revenue": 7859,
+      "sessions": 2048,
+      "newSignups": 80,
+      "conversionRate": 3.9,
+      "activeCustomers": 2830
+    },
+    {
+      "date": "2026-06-07",
+      "revenue": 7537,
+      "sessions": 2134,
+      "newSignups": 80,
+      "conversionRate": 3.74,
+      "activeCustomers": 2815
+    },
+    {
+      "date": "2026-06-08",
+      "revenue": 7515,
+      "sessions": 2528,
+      "newSignups": 97,
+      "conversionRate": 3.85,
+      "activeCustomers": 2841
+    },
+    {
+      "date": "2026-06-09",
+      "revenue": 7374,
+      "sessions": 2361,
+      "newSignups": 93,
+      "conversionRate": 3.94,
+      "activeCustomers": 2837
+    },
+    {
+      "date": "2026-06-10",
+      "revenue": 7742,
+      "sessions": 2749,
+      "newSignups": 104,
+      "conversionRate": 3.8,
+      "activeCustomers": 2876
+    },
+    {
+      "date": "2026-06-11",
+      "revenue": 7701,
+      "sessions": 2514,
+      "newSignups": 94,
+      "conversionRate": 3.73,
+      "activeCustomers": 2883
+    },
+    {
+      "date": "2026-06-12",
+      "revenue": 7672,
+      "sessions": 2620,
+      "newSignups": 97,
+      "conversionRate": 3.71,
+      "activeCustomers": 2855
+    },
+    {
+      "date": "2026-06-13",
+      "revenue": 7860,
+      "sessions": 1894,
+      "newSignups": 70,
+      "conversionRate": 3.71,
+      "activeCustomers": 2882
+    },
+    {
+      "date": "2026-06-14",
+      "revenue": 7697,
+      "sessions": 2056,
+      "newSignups": 82,
+      "conversionRate": 3.97,
+      "activeCustomers": 2888
+    },
+    {
+      "date": "2026-06-15",
+      "revenue": 7687,
+      "sessions": 2489,
+      "newSignups": 99,
+      "conversionRate": 3.97,
+      "activeCustomers": 2902
+    },
+    {
+      "date": "2026-06-16",
+      "revenue": 7567,
+      "sessions": 2549,
+      "newSignups": 101,
+      "conversionRate": 3.95,
+      "activeCustomers": 2896
+    },
+    {
+      "date": "2026-06-17",
+      "revenue": 7751,
+      "sessions": 2424,
+      "newSignups": 95,
+      "conversionRate": 3.91,
+      "activeCustomers": 2913
+    },
+    {
+      "date": "2026-06-18",
+      "revenue": 7479,
+      "sessions": 2515,
+      "newSignups": 99,
+      "conversionRate": 3.93,
+      "activeCustomers": 2901
+    },
+    {
+      "date": "2026-06-19",
+      "revenue": 7990,
+      "sessions": 2650,
+      "newSignups": 105,
+      "conversionRate": 3.95,
+      "activeCustomers": 2912
+    },
+    {
+      "date": "2026-06-20",
+      "revenue": 7639,
+      "sessions": 1906,
+      "newSignups": 74,
+      "conversionRate": 3.86,
+      "activeCustomers": 2894
+    },
+    {
+      "date": "2026-06-21",
+      "revenue": 7907,
+      "sessions": 1994,
+      "newSignups": 78,
+      "conversionRate": 3.91,
+      "activeCustomers": 2900
+    },
+    {
+      "date": "2026-06-22",
+      "revenue": 7727,
+      "sessions": 2710,
+      "newSignups": 103,
+      "conversionRate": 3.81,
+      "activeCustomers": 2941
+    },
+    {
+      "date": "2026-06-23",
+      "revenue": 8068,
+      "sessions": 2356,
+      "newSignups": 94,
+      "conversionRate": 3.99,
+      "activeCustomers": 2923
+    },
+    {
+      "date": "2026-06-24",
+      "revenue": 7794,
+      "sessions": 2713,
+      "newSignups": 104,
+      "conversionRate": 3.83,
+      "activeCustomers": 2894
+    },
+    {
+      "date": "2026-06-25",
+      "revenue": 7729,
+      "sessions": 2567,
+      "newSignups": 101,
+      "conversionRate": 3.94,
+      "activeCustomers": 2929
+    },
+    {
+      "date": "2026-06-26",
+      "revenue": 7688,
+      "sessions": 2663,
+      "newSignups": 107,
+      "conversionRate": 4,
+      "activeCustomers": 2934
+    },
+    {
+      "date": "2026-06-27",
+      "revenue": 7821,
+      "sessions": 1888,
+      "newSignups": 74,
+      "conversionRate": 3.93,
+      "activeCustomers": 2922
+    },
+    {
+      "date": "2026-06-28",
+      "revenue": 7953,
+      "sessions": 2157,
+      "newSignups": 85,
+      "conversionRate": 3.94,
+      "activeCustomers": 2942
+    },
+    {
+      "date": "2026-06-29",
+      "revenue": 8103,
+      "sessions": 2586,
+      "newSignups": 100,
+      "conversionRate": 3.85,
+      "activeCustomers": 2957
+    },
+    {
+      "date": "2026-06-30",
+      "revenue": 7737,
+      "sessions": 2511,
+      "newSignups": 95,
+      "conversionRate": 3.8,
+      "activeCustomers": 2961
+    },
+    {
+      "date": "2026-07-01",
+      "revenue": 7607,
+      "sessions": 2675,
+      "newSignups": 105,
+      "conversionRate": 3.94,
+      "activeCustomers": 2954
+    },
+    {
+      "date": "2026-07-02",
+      "revenue": 8206,
+      "sessions": 2494,
+      "newSignups": 99,
+      "conversionRate": 3.96,
+      "activeCustomers": 2977
+    },
+    {
+      "date": "2026-07-03",
+      "revenue": 8104,
+      "sessions": 2679,
+      "newSignups": 103,
+      "conversionRate": 3.85,
+      "activeCustomers": 2976
+    },
+    {
+      "date": "2026-07-04",
+      "revenue": 8185,
+      "sessions": 1990,
+      "newSignups": 75,
+      "conversionRate": 3.77,
+      "activeCustomers": 2957
+    },
+    {
+      "date": "2026-07-05",
+      "revenue": 8240,
+      "sessions": 1951,
+      "newSignups": 76,
+      "conversionRate": 3.88,
+      "activeCustomers": 2970
+    },
+    {
+      "date": "2026-07-06",
+      "revenue": 7893,
+      "sessions": 2704,
+      "newSignups": 107,
+      "conversionRate": 3.95,
+      "activeCustomers": 2969
+    },
+    {
+      "date": "2026-07-07",
+      "revenue": 7928,
+      "sessions": 2501,
+      "newSignups": 96,
+      "conversionRate": 3.82,
+      "activeCustomers": 2960
+    },
+    {
+      "date": "2026-07-08",
+      "revenue": 7964,
+      "sessions": 2689,
+      "newSignups": 103,
+      "conversionRate": 3.83,
+      "activeCustomers": 3012
+    },
+    {
+      "date": "2026-07-09",
+      "revenue": 7729,
+      "sessions": 2423,
+      "newSignups": 97,
+      "conversionRate": 3.99,
+      "activeCustomers": 2988
+    },
+    {
+      "date": "2026-07-10",
+      "revenue": 8221,
+      "sessions": 2612,
+      "newSignups": 98,
+      "conversionRate": 3.76,
+      "activeCustomers": 3030
+    },
+    {
+      "date": "2026-07-11",
+      "revenue": 8191,
+      "sessions": 2093,
+      "newSignups": 81,
+      "conversionRate": 3.89,
+      "activeCustomers": 2999
+    },
+    {
+      "date": "2026-07-12",
+      "revenue": 8097,
+      "sessions": 2093,
+      "newSignups": 80,
+      "conversionRate": 3.82,
+      "activeCustomers": 3013
+    },
+    {
+      "date": "2026-07-13",
+      "revenue": 8379,
+      "sessions": 2596,
+      "newSignups": 102,
+      "conversionRate": 3.91,
+      "activeCustomers": 3008
+    },
+    {
+      "date": "2026-07-14",
+      "revenue": 7832,
+      "sessions": 2668,
+      "newSignups": 102,
+      "conversionRate": 3.84,
+      "activeCustomers": 3018
+    },
+    {
+      "date": "2026-07-15",
+      "revenue": 7822,
+      "sessions": 2424,
+      "newSignups": 93,
+      "conversionRate": 3.85,
+      "activeCustomers": 3028
+    },
+    {
+      "date": "2026-07-16",
+      "revenue": 8303,
+      "sessions": 2448,
+      "newSignups": 98,
+      "conversionRate": 3.99,
+      "activeCustomers": 3060
+    },
+    {
+      "date": "2026-07-17",
+      "revenue": 8474,
+      "sessions": 2728,
+      "newSignups": 108,
+      "conversionRate": 3.97,
+      "activeCustomers": 3054
+    },
+    {
+      "date": "2026-07-18",
+      "revenue": 8200,
+      "sessions": 2146,
+      "newSignups": 80,
+      "conversionRate": 3.74,
+      "activeCustomers": 3041
+    },
+    {
+      "date": "2026-07-19",
+      "revenue": 7895,
+      "sessions": 1958,
+      "newSignups": 75,
+      "conversionRate": 3.81,
+      "activeCustomers": 3036
+    },
+    {
+      "date": "2026-07-20",
+      "revenue": 8462,
+      "sessions": 2395,
+      "newSignups": 93,
+      "conversionRate": 3.89,
+      "activeCustomers": 3065
+    },
+    {
+      "date": "2026-07-21",
+      "revenue": 7965,
+      "sessions": 2701,
+      "newSignups": 105,
+      "conversionRate": 3.87,
+      "activeCustomers": 3055
+    },
+    {
+      "date": "2026-07-22",
+      "revenue": 8404,
+      "sessions": 2628,
+      "newSignups": 99,
+      "conversionRate": 3.78,
+      "activeCustomers": 3071
+    },
+    {
+      "date": "2026-07-23",
+      "revenue": 8541,
+      "sessions": 2755,
+      "newSignups": 106,
+      "conversionRate": 3.84,
+      "activeCustomers": 3090
+    },
+    {
+      "date": "2026-07-24",
+      "revenue": 8551,
+      "sessions": 2636,
+      "newSignups": 100,
+      "conversionRate": 3.79,
+      "activeCustomers": 3097
+    },
+    {
+      "date": "2026-07-25",
+      "revenue": 8142,
+      "sessions": 1890,
+      "newSignups": 73,
+      "conversionRate": 3.84,
+      "activeCustomers": 3069
+    },
+    {
+      "date": "2026-07-26",
+      "revenue": 7926,
+      "sessions": 2037,
+      "newSignups": 81,
+      "conversionRate": 3.98,
+      "activeCustomers": 3060
+    },
+    {
+      "date": "2026-07-27",
+      "revenue": 8184,
+      "sessions": 2473,
+      "newSignups": 93,
+      "conversionRate": 3.77,
+      "activeCustomers": 3082
+    },
+    {
+      "date": "2026-07-28",
+      "revenue": 8423,
+      "sessions": 2761,
+      "newSignups": 111,
+      "conversionRate": 4.03,
+      "activeCustomers": 3067
+    },
+    {
+      "date": "2026-07-29",
+      "revenue": 8138,
+      "sessions": 2595,
+      "newSignups": 101,
+      "conversionRate": 3.88,
+      "activeCustomers": 3104
+    },
+    {
+      "date": "2026-07-30",
+      "revenue": 8540,
+      "sessions": 2537,
+      "newSignups": 99,
+      "conversionRate": 3.89,
+      "activeCustomers": 3087
+    },
+    {
+      "date": "2026-07-31",
+      "revenue": 8163,
+      "sessions": 2401,
+      "newSignups": 96,
+      "conversionRate": 3.98,
+      "activeCustomers": 3097
+    },
+    {
+      "date": "2026-08-01",
+      "revenue": 8321,
+      "sessions": 2058,
+      "newSignups": 78,
+      "conversionRate": 3.81,
+      "activeCustomers": 3115
+    },
+    {
+      "date": "2026-08-02",
+      "revenue": 8478,
+      "sessions": 2146,
+      "newSignups": 82,
+      "conversionRate": 3.81,
+      "activeCustomers": 3147
+    },
+    {
+      "date": "2026-08-03",
+      "revenue": 8481,
+      "sessions": 2448,
+      "newSignups": 93,
+      "conversionRate": 3.79,
+      "activeCustomers": 3148
+    },
+    {
+      "date": "2026-08-04",
+      "revenue": 8631,
+      "sessions": 2796,
+      "newSignups": 112,
+      "conversionRate": 3.99,
+      "activeCustomers": 3155
+    },
+    {
+      "date": "2026-08-05",
+      "revenue": 8724,
+      "sessions": 2660,
+      "newSignups": 103,
+      "conversionRate": 3.87,
+      "activeCustomers": 3163
+    },
+    {
+      "date": "2026-08-06",
+      "revenue": 8441,
+      "sessions": 2575,
+      "newSignups": 97,
+      "conversionRate": 3.76,
+      "activeCustomers": 3140
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2025-08",
+      "revenue": 102102,
+      "sessions": 52070,
+      "conversionRate": 3.54,
+      "activeCustomers": 1571
+    },
+    {
+      "month": "2025-09",
+      "revenue": 130074,
+      "sessions": 63799,
+      "conversionRate": 3.6,
+      "activeCustomers": 1677
+    },
+    {
+      "month": "2025-10",
+      "revenue": 145157,
+      "sessions": 67769,
+      "conversionRate": 3.62,
+      "activeCustomers": 1828
+    },
+    {
+      "month": "2025-11",
+      "revenue": 151672,
+      "sessions": 65793,
+      "conversionRate": 3.66,
+      "activeCustomers": 1948
+    },
+    {
+      "month": "2025-12",
+      "revenue": 167363,
+      "sessions": 69725,
+      "conversionRate": 3.68,
+      "activeCustomers": 2087
+    },
+    {
+      "month": "2026-01",
+      "revenue": 179693,
+      "sessions": 68330,
+      "conversionRate": 3.7,
+      "activeCustomers": 2249
+    },
+    {
+      "month": "2026-02",
+      "revenue": 171030,
+      "sessions": 63560,
+      "conversionRate": 3.69,
+      "activeCustomers": 2380
+    },
+    {
+      "month": "2026-03",
+      "revenue": 201019,
+      "sessions": 71292,
+      "conversionRate": 3.78,
+      "activeCustomers": 2482
+    },
+    {
+      "month": "2026-04",
+      "revenue": 207264,
+      "sessions": 70010,
+      "conversionRate": 3.78,
+      "activeCustomers": 2655
+    },
+    {
+      "month": "2026-05",
+      "revenue": 225144,
+      "sessions": 71058,
+      "conversionRate": 3.81,
+      "activeCustomers": 2794
+    },
+    {
+      "month": "2026-06",
+      "revenue": 230954,
+      "sessions": 72068,
+      "conversionRate": 3.87,
+      "activeCustomers": 2961
+    },
+    {
+      "month": "2026-07",
+      "revenue": 252709,
+      "sessions": 75681,
+      "conversionRate": 3.88,
+      "activeCustomers": 3097
+    },
+    {
+      "month": "2026-08",
+      "revenue": 51076,
+      "sessions": 14683,
+      "conversionRate": 3.85,
+      "activeCustomers": 3140
+    }
+  ]
+}

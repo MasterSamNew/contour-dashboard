@@ -1,0 +1,239 @@
+/*
+  Contour — chart workspace (M4)
+
+  The "instrument" read: hairline grid, straight (unsmoothed) line
+  segments, a flat low-opacity area fill, and a second higher-contrast pass
+  of the same gridlines clipped to the area shape — read as elevation
+  contours crossing shaded terrain. No gradients.
+*/
+
+.chart-workspace {
+  margin-top: var(--space-8);
+  padding: var(--space-4) var(--space-6) var(--space-6);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.chart-header__title {
+  font-size: var(--text-lg);
+}
+
+.chart-header__value {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--space-1);
+}
+
+/* ---- Controls ---- */
+
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.chart-controls__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.chart-controls__legend {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.chart-controls__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.chart-controls__button {
+  min-height: 2.25rem;
+  padding: var(--space-1) var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  transition: background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+.chart-controls__button:hover {
+  background-color: var(--color-hover-overlay);
+  color: var(--color-text-primary);
+}
+
+.chart-controls__button[aria-pressed="true"] {
+  background-color: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] .chart-controls__button[aria-pressed="true"] {
+  color: var(--color-text-primary);
+}
+
+/* ---- Figure / SVG ---- */
+
+.chart__figure {
+  margin: var(--space-5) 0 0;
+}
+
+.chart__svg-wrap {
+  position: relative;
+  width: 100%;
+  /* Caps how far the line/area can stretch horizontally relative to its
+     fixed viewBox height (preserveAspectRatio="none" scales non-uniformly)
+     — past this width the same data would otherwise read as visibly
+     flatter/steeper purely because of window width, not the numbers. */
+  max-width: 60rem;
+}
+
+.chart__svg {
+  display: block;
+  width: 100%;
+  height: 17rem;
+}
+
+@media (min-width: 1280px) {
+  .chart__svg {
+    height: 19rem;
+  }
+}
+
+.chart__gridline {
+  stroke: var(--color-border);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.chart__contour-line {
+  stroke: var(--color-accent);
+  stroke-width: 1;
+  stroke-opacity: 0.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.chart__axis-label {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  fill: var(--color-text-tertiary);
+}
+
+.chart__area {
+  fill: var(--color-accent-soft);
+  stroke: none;
+}
+
+.chart__line {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: stroke-dashoffset var(--duration-slow) var(--ease-standard);
+}
+
+.chart__marker {
+  fill: var(--color-surface);
+  stroke: var(--color-accent);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ---- Interaction: hotspots + tooltip ---- */
+
+.chart__hotspot {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.chart__hotspot:hover,
+.chart__hotspot:focus-visible {
+  background-color: var(--color-hover-overlay);
+}
+
+.chart__tooltip {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 10px));
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--color-text-primary);
+  color: var(--color-bg);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+  z-index: var(--z-dropdown);
+}
+
+/* ---- Accessible data table ---- */
+
+.chart__details {
+  margin-top: var(--space-4);
+}
+
+.chart__details summary {
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-accent);
+}
+
+.chart__table {
+  width: 100%;
+  margin-top: var(--space-3);
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.chart__table th,
+.chart__table td {
+  padding: var(--space-2) var(--space-2);
+  text-align: left;
+  border-bottom: var(--border-width) solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.chart__table td {
+  text-align: right;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 640px) {
+  .chart__svg {
+    height: 13rem;
+  }
+
+  .chart-workspace {
+    padding: var(--space-4);
+  }
+}

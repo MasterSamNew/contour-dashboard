@@ -1,0 +1,42 @@
+/*
+  Contour — toast (M6)
+  Bottom-center confirmation, reusing the reserved --z-toast token (defined
+  in tokens.css since M1, unused until now).
+*/
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-6);
+  z-index: var(--z-toast);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-text-primary);
+  color: var(--color-bg);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-elevated);
+  transform: translate(-50%, calc(100% + var(--space-6)));
+  opacity: 0;
+  transition: transform var(--duration-base) var(--ease-standard), opacity var(--duration-base) var(--ease-standard);
+  pointer-events: none;
+}
+
+.toast.is-visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .toast {
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+    transform: translateY(calc(100% + var(--space-4)));
+    text-align: center;
+  }
+
+  .toast.is-visible {
+    transform: translateY(0);
+  }
+}

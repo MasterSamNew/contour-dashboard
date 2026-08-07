@@ -1,0 +1,99 @@
+/*
+  Contour — app shell layout (M2)
+
+  Mobile-first: below the shell breakpoint, the sidebar is an off-canvas
+  drawer (positioned/animated in css/components/drawer.css + sidebar.css)
+  and the topbar carries navigation triggers. At/above the breakpoint, the
+  shell becomes a two-column grid with a persistent sidebar and the topbar
+  hides entirely (the page's own view heading takes over that role).
+
+  Breakpoint decision: 1024px, chosen now so the drawer has a concrete
+  cutoff to build against. This is provisional — M8 (Responsive Refinement)
+  re-confirms it once real dashboard content (tables/charts) exists to test
+  against, per the M1 plan's decision to defer that exact call.
+*/
+
+:root {
+  --sidebar-width: 260px;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#main-content {
+  flex: 1 1 auto;
+  min-width: 0; /* prevents a flex/grid item from overflowing on wide content added later (tables, charts) */
+}
+
+@media (min-width: 1024px) {
+  .app-shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    align-items: start;
+    min-height: 100vh;
+  }
+
+  #main-content {
+    min-height: 100vh;
+  }
+}
+
+/* Skip link: visually hidden until keyboard-focused, then pinned top-left */
+.skip-link {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: var(--z-modal);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+}
+
+#view-root {
+  width: 100%;
+  max-width: 100%;
+  padding: var(--space-6);
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+/* ---- Shared bootstrap-level states (loading/error) — used by app.js until
+   real per-view content lands in M3+ ---- */
+.error-state {
+  max-width: 32rem;
+}
+
+.error-state p {
+  color: var(--color-text-secondary);
+  margin-block: var(--space-3) var(--space-4);
+}
+
+.error-state button {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+  border-radius: var(--radius-sm);
+  font-weight: var(--weight-medium);
+}
+
+.error-state button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.view-placeholder__note {
+  color: var(--color-text-secondary);
+  max-width: 40rem;
+}

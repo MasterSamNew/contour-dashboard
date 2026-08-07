@@ -1,0 +1,50 @@
+{
+  "product": {
+    "name": "Contour",
+    "tagline": "See the shape of your growth."
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "route": "#/overview",
+      "icon": "grid",
+      "order": 1
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics",
+      "route": "#/analytics",
+      "icon": "trending-up",
+      "order": 2
+    },
+    {
+      "id": "customers",
+      "label": "Customers",
+      "route": "#/customers",
+      "icon": "users",
+      "order": 3
+    },
+    {
+      "id": "transactions",
+      "label": "Transactions",
+      "route": "#/transactions",
+      "icon": "credit-card",
+      "order": 4
+    },
+    {
+      "id": "reports",
+      "label": "Reports",
+      "route": "#/reports",
+      "icon": "file-text",
+      "order": 5
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "route": "#/settings",
+      "icon": "settings",
+      "order": 6
+    }
+  ]
+}
